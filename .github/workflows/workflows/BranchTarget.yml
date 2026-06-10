@@ -32,3 +32,6 @@ jobs:
       - name: Report main target
         run: echo You pushed to main
         if: github.ref == 'refs/heads/main'
+
+      - name: Run custom action
+        uses: /.github/actions/print.yml

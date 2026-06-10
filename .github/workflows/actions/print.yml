@@ -1,0 +1,8 @@
+name: Print repository name
+
+runs:
+    using: composite
+    steps:
+        - name: Print repo name
+          shell: bash
+          run: echo ${{ github.repository }}
